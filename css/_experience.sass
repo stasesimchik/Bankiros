@@ -33,7 +33,7 @@
     justify-content: space-between
   &__block
     position: relative
-    max-height: 120px
+    height: 120px
     max-width: 380px
     overflow: hidden
     border-radius: 5px
@@ -41,6 +41,8 @@
     display: flex
     flex-direction: column
     justify-content: space-between
+    &:first-child
+      margin-right: 10px
     &::after
       content: ''
       width: 100%
@@ -58,10 +60,10 @@
       font-size: 22px
   &__image
     position: absolute
-    min-height: 120px
+    height: 100%
     width: 100%
   &__date
-    padding: 25px
+    padding: 5px
   &__title
     margin-bottom: 10px
   &__btn
