@@ -21,8 +21,9 @@
   &__sign
     padding: 10px 0px
 @media (max-width:851px)
+  .sidebar__title
+    text-align: center
   .experience
-    
     &__big-block
       margin-right: 0
       margin-bottom: 5px
@@ -44,13 +45,34 @@
 @media (max-width:750px)
   .header-bottom
     display: none
+    max-height: none
+  .nav
+    &__list
+     flex-wrap: wrap
+    &__item
+     width: 100%
+     border-bottom: 1px solid $light
+     padding: 2px 0px
+     text-align: center
+     &:active
+       background: $blue
+     &:active .nav__link
+       color: $white
   .main
     margin-top: 58px
   .top-header__burger
     display: block
 @media (max-width:700px)
+ .big-block__link
+   font-size: 24px
+ .content-main__link
+   font-size: 14px
+ .main__sidebar
+  margin: 0
+ .block-release__text
+   width: 100%
  .top-header__rate
-   display: none 
+   display: none
  .content-wrap
   flex-direction: column
   align-items: center
@@ -61,3 +83,25 @@
     width: 100%
  .footer-text
    display: none
+ .menu-main__item
+@media (max-width:630px)
+  .menu-main__item
+    margin-right: 15px
+@media (max-width:555px)
+  .menu-main__item
+    font-size: 14px
+@media (max-width:555px)
+  .menu-main__item
+    font-size: 12px
+@media (max-width:485px)
+  .menu-main__item:last-child
+   display: none
+  .main-btn
+    margin: 0 auto
+    transform: none
+    width: 100%
+@media (max-width:400px)
+  .menu-main__item:nth-child(4)
+    display: none
+  .main__title
+    font-size: 24px  
